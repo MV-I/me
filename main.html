@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mirel Iovana</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+
+<body>
+
+
+<nav id="navbar">
+    <ul>
+      <li><a href="#welcome-anchor">  <p>Home</p>  </a></li>
+      <!--<li><a href="#contact-anchor">  <p>About</p>  </a></li>-->
+      <!--<li><a href="#projects-anchor">  <p>Skills</p>  </a></li>-->
+      <li><a href="#projects-anchor">  <p>Projects</p>  </a></li>
+      <li id="last-nav-item"><a href="#contact-anchor">  <p>Contact</p>  </a></li>
+    </ul>
+  </nav>
+  
+  <div id="content-container">
+    <span id="welcome-anchor" class="anchor"></span>
+    <section id="welcome-section">
+      <h1>👋🏼 Hi, my name is Mirel</h1>
+      <h3 class="under-title"><span id="white"> Web Developer | Artist | </span>Learner 
+          <details id="arrow">
+            <summary></summary>
+            <p id="skills">🎵 / 🕺 / 🎥 / 📸 / ✍️ </p>
+          </details> 
+        </h3>
+    </section>
+  
+    <span id="projects-anchor" class="anchor"></span>
+    <section id="projects">
+     <h2 class="secondary-title">These are some of my projects</h2>
+      <div id="projects-grid">
+         <a href="projects/Calculator/index.html" class="project-tile">
+            <img src="img/calculator_ss.png" class="project-image">
+            <p class="project-title">Calculator</p>
+         </a>
+         <a href="projects/gameoflife/index.html" class="project-tile">
+            <img src="img/gameoflife_ss.png" class="project-image">
+            <p class="project-title">Game of Life</p>
+         </a>
+         <a href="projects/Tic-Tac-Toe/main.html" class="project-tile">
+            <img src="img/tictactoe_ss.png" class="project-image">
+            <p class="project-title">Tic Tac Toe</p>
+         </a>
+      </div>
+    </section>
+  
+    <section id="contact">
+      <span id="contact-anchor" class="anchor"></span>
+      <h2>Let's work together</h2>
+      <p class="under-h2">Contact me on</p>
+      <div id="contact-links">
+        <a href="https://www.linkedin.com/in/mirel-valentin-iovana-28ab87199/" id="profile-link" target="_blank">
+          <img src="data:image/png;base64,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" class="logo-social">
+          <p>LinkedIn</p>
+        </a>
+        <a href="https://www.twitter.com/mirel_2" target="_blank">
+          <img src="https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/twitter-icon-18-256.png" class="logo-social">
+          <p>Twitter</p>
+        </a>
+        <a href="https://github.com/MV-I" target="_blank">
+          <img src="https://github-grabber.herokuapp.com/images/github-icon.png" class="logo-social">
+          <p>GitHub</p>
+        </a>
+        <a href="mailto: mireliovana@gmail.com" target="_blank">
+          <img src="https://secoora.org/wp-content/uploads/sites/default/files/webfm/bottom%20block/mail_circle_WHITE.png" class="logo-social">
+          <p>E-Mail</p>
+        </a>
+      </div>
+    </section>
+    
+  </div>
+
+
+</body>
+
+<script src="main.js"></script>
+</html>
