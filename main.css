@@ -11,6 +11,58 @@ ul {
   margin: 0;
   padding: 0;
 }
+#work-in-progress-badge {
+  position: absolute;
+  top: 5rem;
+  left: -6rem;
+  width: 17rem;
+  height: 3.5rem;
+  background-color: yellow;
+  transform: rotate(-45deg);
+  text-align: center;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+.stripes {
+  display: block;
+  padding: 0;
+  margin: 0;
+  background: -webkit-repeating-linear-gradient(
+    -45deg,
+    #efff14 1px,
+    #efff14 2px,
+    #000000 11px,
+    #000000 12px,
+    #000000 20px
+  );
+  background: repeating-linear-gradient(
+      -45deg,
+      #efff14,
+      #efff14 10px,
+      #000000 10px,
+      #000000 20px
+  );
+  height: 1rem;
+  width: 100%;
+
+	
+  animation-name: MOVE-STRIPES;
+	animation-duration: .5s;
+	animation-timing-function:linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes MOVE-STRIPES {
+	from {
+		transform: translateX(0);
+	}
+	to { 
+		transform: translateX(1.75rem);
+	}
+}
+
 h1 {
   font-size: 4rem;
   font-weight: 700;
@@ -203,6 +255,9 @@ h2 {
     #navbar p {
       font-size: 3rem;
     }
+    #work-in-progress-badge {
+      top: 8rem;
+    }
     h1 {
       text-align: center;
       font-size: 8rem;
@@ -270,5 +325,9 @@ h2 {
 @media only screen and (max-width: 775px) {
   #skills {
     right: 15%;
+  }
+  #work-in-progress-badge {
+    height: 4rem;
+    font-size: 1.3rem;
   }
 }
