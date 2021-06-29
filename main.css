@@ -16,13 +16,14 @@ ul {
   top: 5rem;
   left: -6rem;
   width: 17rem;
-  height: 3.5rem;
+  height: 4.35rem;
   background-color: yellow;
   transform: rotate(-45deg);
   text-align: center;
   font-weight: 500;
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 
 .stripes {
