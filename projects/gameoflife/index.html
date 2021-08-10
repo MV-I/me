@@ -1,18 +1,26 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>Game of Life (Web)</title>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-    </head>
-    <body>
-        <a id="link-home" href="../../index.html">Back to Website</a>
-        <div class="container">
-            <canvas id="canvas"></canvas>
-            <button class="button-toggle">Start/Stop</button>
-        </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.core.min.js" integrity="sha256-yEkk5ZYVs/fZgvxWU+sCb8bHTk9jScxIaZQD+CZ4vcg=" crossorigin="anonymous"></script>
-        <script src="js/bundle.js"></script>
-    </body>
-</html>
+<head>
+    <meta charset = "UTF-8" />
+    <title>Game of Life</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/heart.png"/>
+</head>
+<body>
 
+<h1 id="main-title"><span id="main-title-text">Game of Life</span></h1>
+
+<div id="gridContainer">
+    
+</div>
+
+<div class="controls">
+    <button id="start"><span>Start</span></button>
+    <button id="next"><span>Next</span></button>
+    <button id="clear"><span>Clear</span></button>
+    <button id="random"><span>Random</span></button>
+</div>
+    
+<script src="main.js"></script>
+    
+</body>
+</html>
