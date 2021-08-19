@@ -41,7 +41,11 @@ td {
     height: 1rem;
 }
 
-#start, #clear, #random, #next {
+td:hover {
+    cursor: pointer;
+}
+
+#start, #clear, #random, #next, #go-back {
     color: white;
     padding: .75em;
     border-radius: 5px;
@@ -50,6 +54,22 @@ td {
         to bottom right,
         #940068, #29045a);
 }
+#start:hover, #clear:hover, #random:hover, #next:hover, #go-back:hover {
+    cursor: pointer;
+}
+
+#go-back {
+    margin-top: 1rem;
+    border: 1px solid white;
+}
+
+#go-back:hover {
+    background: linear-gradient(
+        to bottom right,
+        #db009a, #4d07a8);
+    border: transparent;
+}
+
 #start span, #clear span, #random span, #next span {
     color: white;
 }

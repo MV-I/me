@@ -60,12 +60,21 @@ input {
   display: flex;
   flex-direction: row; }
 
-  #link-back {
-    margin-top: 2rem;
-    text-align: center;
-    border-radius: 3px;
-    background-color: #508068;
-    color: white;
-    width: 5rem;
-    height: 2.5rem;
-  }
+#link-back {
+  margin-top: 2rem;
+  padding: .5rem .75rem;
+  text-align: center;
+  border-radius: 3px;
+  background-color: #9edebe;
+  color: black;
+  width: 8rem;
+  height: 1.5rem;
+  text-decoration: none;
+  box-shadow: 3px 3px #508068;
+}
+
+#link-back:hover{
+  background-color: #508068;
+  box-shadow: 3px 3px black;
+
+}

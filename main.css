@@ -341,14 +341,39 @@ h2 {
       font-weight: 300;
       height: 6rem;
     }
+    #work-in-progress-badge {
+      width: 30rem;
+      height: 10rem;
+      left: -9rem;
+    }
+    #wip-text {
+      height: 6rem;
+      font-size: 2.5rem;
+    }
+    .stripes {
+      height: 2rem;
+    }
+    #skills {
+      font-size: 4rem;
+      right: 20%;
+    }
   }
 
 @media only screen and (max-width: 775px) {
   #skills {
-    right: 15%;
+    right: 20%;
+    font-size: 7rem;
   }
   #work-in-progress-badge {
-    height: 4rem;
-    font-size: 1.3rem;
+    width: 30rem;
+    height: 10rem;
+    left: -9rem;
+  }
+  #wip-text {
+    height: 6rem;
+    font-size: 2.5rem;
+  }
+  .stripes {
+    height: 2rem;
   }
 }
