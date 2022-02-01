@@ -129,7 +129,7 @@ input {
   }
 }
 
-@media only screen and (orientation: landscape) {
+@media only screen and (orientation: landscape) and (max-height: 500px) {
   #calculator {
     margin-top: 1vh;
     height: 140vh;
