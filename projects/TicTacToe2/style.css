@@ -1,0 +1,39 @@
+html {
+    height: 100%;
+    margin: 0;
+}
+body {
+    height: 100%;
+    margin: 4%;
+}
+#main-container {
+    height: 100%;
+    width: 100%;
+    background-color: wheat;
+}
+#game-board {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 2%;
+    row-gap: 2%;
+    background-color: gray;
+    aspect-ratio: 1/1;
+}
+
+.cell {
+    background:linear-gradient(lightblue, lightyellow);
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell.clickable {
+    cursor: pointer;
+}
+
+.xo {
+    width: 80%;
+    height: 80%;
+}
