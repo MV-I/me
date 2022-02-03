@@ -141,34 +141,31 @@ body {
     cursor: pointer;
 }
 
+/* ----------- Laptops (Non-Retina Screens) ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
 
-@media only screen and (min-width: 768px) {
-    #main-container {
-        width: 60%;
-    }
-    #main-title {
-        width: 60%;
-        font-size: 2.5rem;
-        margin-bottom: 1%;
-    }
-    #win-announcement {
-        margin-top: 1%;
-        min-height: 2.5rem;
-        font-size: 2rem;
-    }
-    #go-back, #restart {
+      #main-container {
+          width: 40%;
+      }
+
+      #main-title {
+          font-size: 2.5rem;
+          margin-bottom: 1.75%;
+      }
+
+      #win-announcement {
+          min-height: 4rem;
+          font-size: 2rem;
+          margin-top: 1.75%;
+          min-height: 5%;
+      }
+
+      #go-back, #restart {
         font-size: 1rem;
-        border-radius: 0.5rem;
+        border-radius: 0.5rem;   
+        margin-top: 1rem;
     }
-}
 
-@media only screen and (min-width: 1200px) {
-    #main-container {
-        width: 30%;
-    }
-    #main-title {
-        width: 30%;
-        font-size: 2.5rem;
-        margin-bottom: 0.75rem;
-    }
 }
