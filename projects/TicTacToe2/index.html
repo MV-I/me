@@ -2,18 +2,30 @@
 <html>
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
         <title>Tic-Tac-Toe</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-
         <div id="main-container">
+            <h1 id="main-title"><span id="main-title-text">Tic-Tac-Toe</span></h1>
             <div id="game-board">
                
             </div>
+            <p id="win-announcement">X's turn</p>
+
+            <div id="buttons">
+                <a href="./index.html" id="restart-link">
+                    <button id="restart"><span>Play again</span></button>
+                </a>
+                <a href="../../index.html" id="go-back-link">
+                    <button id="go-back"><span>Back to Website</span></button>
+                </a>
+            </div>
+
         </div>
         
-        <a id="link-back" href="../../index.html">Back to Website</a>
 
     <script src="script.js"></script>
     </body>

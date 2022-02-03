@@ -1,15 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 html {
     height: 100%;
     margin: 0;
+    background: linear-gradient(to top left, #11001c, #290025);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 body {
     height: 100%;
     margin: 4%;
+    display: flex;
+    justify-content: center;
 }
-#main-container {
-    height: 100%;
+
+#main-title {
+    color:white;
+    background: linear-gradient(
+        to bottom right,
+        #940068, #29045a);
+    font-weight: 400;
+    font-size: 5rem;
+    margin-top: 0;
+    min-height: 5%;
     width: 100%;
-    background-color: wheat;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    margin-bottom: 2%;
+    margin-top: 0.5rem;
+}
+#main-title-text {
+    padding-left: 1rem;
+}
+
+#main-container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+
 }
 #game-board {
     display: grid;
@@ -17,23 +49,126 @@ body {
     grid-template-rows: 1fr 1fr 1fr;
     column-gap: 2%;
     row-gap: 2%;
-    background-color: gray;
+    background: linear-gradient(to top left, #11001c, #290025);
     aspect-ratio: 1/1;
 }
 
 .cell {
-    background:linear-gradient(lightblue, lightyellow);
+    background:linear-gradient(#e2bad6, #ad7b9d);
     aspect-ratio: 1/1;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
+    align-items: center;}
 
 .cell.clickable {
     cursor: pointer;
 }
 
-.xo {
+.x {
     width: 80%;
     height: 80%;
+}
+
+.o {
+    height: 65%;
+    width: 65%;
+}
+
+#win-announcement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    color: white;
+    font-size: 3rem;
+    min-height: 7.5rem;
+    width: auto;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border: 0.1rem solid black;
+    background: linear-gradient(
+        to bottom right,
+        #940068, #29045a);
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 2%;
+    row-gap: 2%;
+}
+
+#go-back {
+    min-width: 100%;
+    color: white;
+    font-size: 3rem;
+    padding: .75em;
+    border-radius: 1rem;   
+    background: linear-gradient(
+        to bottom right,
+        #db009a, #4d07a8);
+    margin-top: 1rem;
+    border: 0.1rem solid white;
+    text-emphasis: none;
+}
+#restart {
+    min-width: 100%;
+    color: white;
+    font-size: 3rem;
+    padding: .75em;
+    border-radius: 1rem;   
+    background: linear-gradient(
+        to bottom right,
+        #db009a, #4d07a8);
+    margin-top: 1rem;
+    border: none;
+}
+
+#go-back-link, #restart-link {
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#go-back:hover, #restart:hover {
+    background: linear-gradient(
+        to bottom right,
+        #940068, #29045a);
+    border: transparent;
+    cursor: pointer;
+}
+
+
+@media only screen and (min-width: 768px) {
+    #main-container {
+        width: 60%;
+    }
+    #main-title {
+        width: 60%;
+        font-size: 2.5rem;
+        margin-bottom: 1%;
+    }
+    #win-announcement {
+        margin-top: 1%;
+        min-height: 2.5rem;
+        font-size: 2rem;
+    }
+    #go-back, #restart {
+        font-size: 1rem;
+        border-radius: 0.5rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #main-container {
+        width: 30%;
+    }
+    #main-title {
+        width: 30%;
+        font-size: 2.5rem;
+        margin-bottom: 0.75rem;
+    }
 }
