@@ -28,9 +28,8 @@ body {
     padding-left: 1rem;
 }
 #gridContainer {
-    padding-bottom: 1%;
+    margin-bottom: 5rem;
     width: 100%;
-    height: auto;
     aspect-ratio: 1;
 }
 
@@ -39,7 +38,7 @@ table {
     background-color: #ffffff;
     border-spacing: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 tr {
