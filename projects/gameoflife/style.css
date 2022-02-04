@@ -31,7 +31,7 @@ body {
     padding-bottom: 1%;
     width: 100%;
     height: auto;
-    object-fit: contain;
+    aspect-ratio: 1;
 }
 
 table {
