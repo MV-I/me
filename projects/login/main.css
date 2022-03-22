@@ -18,8 +18,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgb(0, 56, 139);
-    background: linear-gradient(to bottom right, rgb(58, 73, 211), rgb(0, 9, 139));
+    background: linear-gradient(to top left, #11001c, #290025);
     background-size: cover;
 }
 
@@ -187,4 +186,69 @@ body {
     border-radius: 25px;
     margin-top: 1rem;
     padding: 0.5rem;
+}
+
+#back-container {
+    width: 50%;
+}
+
+#go-back {
+    color: white;
+    padding: .75em;
+    border-radius: 1rem;
+    border: none;    
+    background: linear-gradient(
+        to bottom right,
+        #940068, #29045a);
+    font-size: 1rem;
+    margin-top: 1rem;
+    border: 1px solid white;
+    width: 100%;
+}
+
+#go-back:hover {
+    background: linear-gradient(
+        to bottom right,
+        #db009a, #4d07a8);
+    border: transparent;
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+    #gridContainer {
+        width: 50%;
+        aspect-ratio: 1;
+        padding-bottom: 0.25rem;
+    }
+    table {
+        margin-top: 0.25rem;
+        width: 100%;
+    }
+    #main-title {
+    height: 4.5%;
+    font-size: 2rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    }
+    td {
+        height: auto;
+    }
+    .controls {
+        width: 50%;
+        margin-top: 0;
+        column-gap: 0.5rem;
+        row-gap: 0.5rem;
+    }
+    #go-back {
+        font-size: 1rem;
+        border-radius: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    #back-container {
+        width: 25%;
+    }
+
 }
