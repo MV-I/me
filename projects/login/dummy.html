@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Dummy Login Page</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="container">
+
+            <!--Login Form-->
+            <form class="form login" id="login">
+                <h1 class="form__title">Login</h1>
+                <div class="form__message form__message--error"></div>
+
+                <!--Username-->
+                <div class="form__input-group">
+                    <input type="text" id="loginUsernameEmail" class="form__input" autofocus placeholder="Username or Email" required>
+                    <div class="form__input-error-message"></div>
+                </div>
+
+                <!--Password-->
+                <div class="form__input-group form__input-group-password">
+                    <input type="password" id="loginPassword" class="form__input form__input--password" placeholder="Password" required>
+                    <img class="eye-icon" src="src/img/eye.png">
+                    <div class="form__input-error-message"></div>
+                </div>
+
+                <button class="form__button" disabled type="submit">Sign in</button>
+
+                <!--Go to Forgot password-->
+                <p class="form__text">
+                    <a id="linkForgotPassword" href="./" class="form__link">Forgot your password?</a>
+                </p>
+
+                <!--No account-->
+                <p class="form__text">
+                    <a id="linkCreateAccount" href="./" class="form__link">Don't have an account? Create account</a>
+                </p>
+
+            </form>
+
+
+            <!--Forgot Password Form-->
+            <form class="form form--hidden" id="forgotPassword" name="forgotPasswordForm">
+                <h1 class="form__title">Password Recovery</h1>
+                <div class="form__message form__message--error"></div>
+
+                <!--Username or Email-->
+                <div class="form__input-group">
+                    <input type="text" id="forgotPWUsernameEmail" class="form__input" autofocus placeholder="Username or Email" required>
+                    <div class="form__input-error-message"></div>
+                </div>
+
+                <button id="sendRecoveryMailButton" class="form__button" disabled type="submit">Send recovery Email</button>
+
+                <!--Go to Login-->
+                <p class="form__text">
+                    <a id="linkLoginFP" href="./" class="form__link">Sign in</a>
+                </p>
+
+                <!--No account-->
+                <p class="form__text">
+                    <a id="linkCreateAccountFP" href="./" class="form__link">Don't have an account? Create account</a>
+                </p>
+
+            </form>
+
+
+            <!--Create Account Form-->
+            <form class="form form--hidden" id="createAccount">
+                <h1 class="form__title">Create Account</h1>
+                <div class="form__message form__message--error"></div>
+
+                <!--Username-->
+                <div class="form__input-group">
+                    <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username" required>
+                    <div class="form__input-error-message"></div>
+                </div>
+
+                <!--Email-->
+                <div class="form__input-group">
+                    <input type="email" id="signupEmail" class="form__input" autofocus placeholder="Email Address" required>
+                    <div class="form__input-error-message"></div>
+                </div>
+
+                <!--Password-->
+                <div class="form__input-group form__input-group-password">
+                    <input type="password" id="signupPassword" class="form__input form__input--password" placeholder="Password" required>
+                    <img class="eye-icon" src="src/img/eye.png">
+                    <div class="form__input-error-message"></div>
+                </div>
+
+                <!--Confirm Password-->
+                <div class="form__input-group form__input-group-password">
+                    <input type="password" id="signupPassword2" class="form__input form__input--password" placeholder="Confirm Password" required>
+                    <img class="eye-icon" src="src/img/eye.png">
+                    <div class="form__input-error-message"></div>
+                </div>
+
+                <button class="form__button" disabled type="submit">Create Account</button>
+
+                <!--Log in-->
+                <p class="form__text">
+                    <a id="linkLoginCA" href="./" class="form__link">Already have an account? Sign in</a>
+                </p>
+
+            </form>
+
+        </div>
+    </body>
+
+<script src="main.js"></script>
+</html>
