@@ -95,7 +95,7 @@ td:hover {
     background: linear-gradient(
         to bottom right,
         #db009a, #4d07a8);
-    border: transparent;
+    border: 1px solid transparent;
 }
 
 #start span, #clear span, #random span, #next span {

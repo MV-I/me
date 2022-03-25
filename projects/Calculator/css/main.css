@@ -85,7 +85,7 @@ input {
   background: linear-gradient(
         to bottom right,
         #db009a, #4d07a8);
-    border: transparent;
+  border: 1px solid transparent;
 }
 
 @media only screen and (max-width: 1200px) {

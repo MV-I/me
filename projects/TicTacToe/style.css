@@ -137,7 +137,7 @@ body {
     background: linear-gradient(
         to bottom right,
         #940068, #29045a);
-    border: transparent;
+        border: 1px solid transparent;
     cursor: pointer;
 }
 
