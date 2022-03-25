@@ -109,7 +109,7 @@ body {
         to bottom right,
         #db009a, #4d07a8);
     margin-top: 1rem;
-    border: 0.1rem solid white;
+    border: 4px solid white;
     text-emphasis: none;
 }
 #restart {
