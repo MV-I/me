@@ -175,38 +175,51 @@ h2 {
   margin-right: 0.5rem;
 }
 .secondary-title {
+  margin-top: 2rem;
   margin-bottom: 4rem;
   width: 100%;
   text-align: center;
 }
 .project-tile {
-  display: block;
-  height: fit-content;
-  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 22.5rem;
+  width: 18rem;
   min-width: 20rem;
   color: white;
   text-decoration: none;
-  background-color: #00171F;
+  background-color: #0a001f;
+  border: 1px solid;
+  border-color: #4d07a8;
   border-radius: 5px;
 }
+
+.project-tile:hover {
+  border-color: white;
+}
+
+.project-tile:active {
+  transform: scale(0.98);
+}
+
 .project-title {
   display: flex;
   justify-content: center;
   height: fit-content;
+  width: 100%;
   min-height: 4rem;
   align-items: center;
-  background-color: #00A7E1;
+  background: linear-gradient( to bottom right, #db009a, #4d07a8);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   margin-bottom: 0px;
 }
 .project-image {
-  opacity: 0.2;
+  opacity: 0.5;
   position: relative;
-  width: 18rem;
-  height: 21rem;
-  top: 0.9rem;
-  left: 1rem;
+  width: 75%;
 }
 #navbar {
   position: fixed;
@@ -214,7 +227,7 @@ h2 {
   left: 0;
   min-height: 4rem;
   z-index: 10;
-  background-color: #BF211E;
+  background-color: #5a0707;
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -235,6 +248,11 @@ h2 {
   font-size: 1.5rem;
   font-weight: 400;
 }
+
+#navbar a:hover {
+  text-decoration: underline;
+}
+
 #navbar p {
   margin: 0px;
 }
@@ -244,7 +262,7 @@ h2 {
   width: 100%;
 }
 #welcome-section {
-  background-color: #00171F;
+  background: linear-gradient(to top left, #11001c, #290025);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -274,7 +292,8 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  background-color: #003459;
+    /*background-color: #003459; */
+    background: linear-gradient(to top left, #210037, #45003e);
   color: white;
 }
 
@@ -282,13 +301,13 @@ h2 {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
-    column-gap: 50px;
-    row-gap: 50px;
+    column-gap: 3rem;
+    row-gap: 3rem;
     justify-items: center;
 }
 
 #contact {
-  background-color: #00171F;
+  background: linear-gradient(to top left, #11001c, #290025);
   width: 100%;
   height: 96vh;
   display: flex;
@@ -369,15 +388,16 @@ h2 {
       align-items: center;
       justify-content: center;
       width: 100%;
-      margin-bottom: 4rem;
+      margin-bottom: 10rem;
+      row-gap: 5rem;
     }
     .project-tile {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
-        width: 90%;
-        height: 50vh;
+        width: 80%;
+        height: 50rem;
     }
     .project-title {
       font-size: 4rem;
@@ -385,10 +405,10 @@ h2 {
       width: 100%;
     }
     .project-image {
-        max-width: 320px;
-        left: 0px;
-        bottom: 0px;
+      max-width: none;
+      width: 75%;
     } 
+
     #contact-links {
       display: block;
     }
@@ -436,4 +456,6 @@ h2 {
   .stripes {
     height: 2rem;
   }
+
+  
 }
